@@ -2,12 +2,15 @@
 
 #SPDX-License-Identifier:BSD-2.0
 
+#*Copyright(c)2021 Ryuich Ueda. All rights reserved.
+#*Copyright(c)2021 Kazuma Toyoshima. All rights reserved.
+
 import rospy
 from std_msgs.msg import Int32
 
-rospy.init_node('second')
-pub = rospy.Publisher('second_up', Int32, queue_size = 1)
-rate = rospy.Rate(1)
+rospy.init_node('count')
+pub = rospy.Publisher('count_up', Int32, queue_size = 1)
+rate = rospy.Rate(10)
 
 n = 0
 
