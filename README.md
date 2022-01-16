@@ -1,6 +1,6 @@
 # 概要
 ### ロボットシステム学　課題2
-0から数を1倍、2倍、5倍に増やしてゆくプログラムです。
+0から数を1、2、5ずつ増やしてゆくプログラムです。
 
 # 開発環境:
 Ubuntu20.04
@@ -56,12 +56,12 @@ rosrun mypkg fifth.py
 rostopic echo /count_up
  ```
  
- 数を2（2倍）ずつ増やす
+ 数を2ずつ増やす
  ```
 rostopic echo /twice
  ```
  
- 数を５（５倍）ずつ増やす
+ 数をずつ増やす
  ```
 rostopic echo /fifth
  ```
