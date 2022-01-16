@@ -12,8 +12,8 @@ from std_msgs.msg import Int32
 rospy.init_node('count')
 pub = rospy.Publiser('count_up'), Init32, queue_size=1)
 rate = rospy.Rate(10)
-n = 0
+n = 10
 while not rospy.is_shutdown():
-    n += 1
+    n += 2
     pub.publish(n)
     rate.sleep()
