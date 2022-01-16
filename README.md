@@ -1,7 +1,6 @@
 # 概要
 ### ロボットシステム学　課題2
-実行後の経過時間表記をさせるROSリポジトリです。
-一秒ごとに0から偶数を表示し、10になると0にリセットされるプログラムです。
+0から数を1倍、2倍、5倍に増やしてゆくプログラムです。
 
 # 開発環境:
 Ubuntu20.04
@@ -32,33 +31,42 @@ source ~/.bashrc
 rosrun mypkg count.py
  ```
  
-## 2. min.py 実行
+## 2. twice.py 実行
 
 新しいタブを立ち上げます。
 
   ```
-rosrun mypkg min.py
+rosrun mypkg twice.py
  ```
 
-## 3. time.py 実行
+## 3. fifth.py 実行
 
 新しいタブを立ち上げます。
 
   ```
-rosrun mypkg time.py
+rosrun mypkg fifth.py
   ```
 
 ## 出力を行う
 
 新しいタブを立ち上げます。
 
+数を1ずつ増やす
  ```
-rostopic echo /timer1
+rostopic echo /count_up
+ ```
+ 
+ 数を2（2倍）ずつ増やす
+ ```
+rostopic echo /twice
+ ```
+ 
+ 数を５（５倍）ずつ増やす
+ ```
+rostopic echo /fifth
  ```
 
 # ライセンス
 Copyright (c) 2021 Ryuich Ueda
-
-Copyright (c) 2021 Hiroyuki Matstuda
 
 Copyright (c) 2021 Kazuma Toyoshima
